@@ -928,3 +928,94 @@
     padding: 12px 20px;
   }
 }
+
+/* Extra small mobile devices */
+@media (max-width: 320px) {
+  .chatbot-container {
+    bottom: 12px;
+    right: 12px;
+  }
+  
+  .chatbot-window {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 80px);
+    right: 10px;
+    border-radius: 16px;
+  }
+  
+  .chatbot-toggle {
+    width: 48px;
+    height: 48px;
+    right: 14px;
+    border-radius: 10px;
+  }
+  
+  .chatbot-icon {
+    font-size: 18px;
+  }
+  
+  .chatbot-header {
+    padding: 12px 14px;
+  }
+  
+  .chatbot-title {
+    font-size: 12px;
+  }
+  
+  .chatbot-status {
+    font-size: 8px;
+  }
+  
+  .chatbot-avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  .chatbot-messages {
+    padding: 14px 10px;
+  }
+  
+  .chatbot-input {
+    padding: 12px 14px;
+  }
+  
+  .feature-item {
+    font-size: 9px;
+    padding: 4px 6px;
+  }
+  
+  .message-content {
+    max-width: 75%;
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  
+  .message-avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  
+  .chatbot-text-input {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+  
+  .chatbot-send-btn,
+  .chatbot-attach-btn {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .preview-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .remove-image-btn {
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+  }
+}

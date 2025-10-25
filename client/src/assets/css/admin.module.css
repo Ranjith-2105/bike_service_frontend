@@ -490,3 +490,57 @@
     font-size: 8px;
   }
 }
+
+/* Extra responsive adjustments for admin dashboard */
+@media (max-width: 600px) {
+  .fullScreenContainer {
+    padding: var(--space-3);
+  }
+  
+  .container {
+    padding: var(--space-4);
+    width: calc(100% - 16px);
+  }
+  
+  .headerBar {
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: stretch;
+  }
+  
+  .headerActions {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logoutBtn,
+  .refreshBtn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .fullScreenContainer {
+    padding: var(--space-2);
+  }
+  
+  .container {
+    padding: var(--space-3);
+  }
+  
+  .hall {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-3);
+  }
+  
+  .headerTitle {
+    font-size: var(--text-xl);
+  }
+  
+  .gradientDivider {
+    height: 28px;
+    margin-bottom: var(--space-2);
+  }
+}

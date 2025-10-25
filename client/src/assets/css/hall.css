@@ -264,19 +264,104 @@ button:active {
 }
 
 @media (max-width: 480px) {
+  .login-content {
+    padding: var(--space-3);
+    gap: var(--space-4);
+  }
+  
   .content {
     padding: var(--space-4);
+    max-width: 100%;
+  }
+  
+  .log_img {
+    max-width: 250px;
+  }
+  
+  .content .text {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-4);
   }
   
   .field input,
   .field select {
     height: 48px;
     font-size: var(--text-sm);
+    padding: 0 var(--space-3) 0 var(--space-10);
+  }
+  
+  .field span {
+    left: var(--space-3);
+    font-size: var(--text-base);
   }
   
   button {
     height: 48px;
     font-size: var(--text-base);
+  }
+  
+  .sign-up {
+    font-size: var(--text-sm);
+  }
+  
+  .alert {
+    font-size: var(--text-xs);
+    padding: var(--space-2);
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .login-content {
+    padding: var(--space-2);
+    gap: var(--space-3);
+  }
+  
+  .content {
+    padding: var(--space-3);
+  }
+  
+  .log_img {
+    max-width: 200px;
+  }
+  
+  .content .text {
+    font-size: var(--text-lg);
+  }
+  
+  .field input,
+  .field select {
+    height: 44px;
+    font-size: var(--text-xs);
+  }
+  
+  button {
+    height: 44px;
+    font-size: var(--text-sm);
+  }
+  
+  .alert {
+    font-size: 10px;
+    padding: var(--space-1);
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .login-content {
+    flex-direction: row;
+    gap: var(--space-4);
+  }
+  
+  .log_img {
+    max-width: 200px;
+    margin-right: var(--space-4);
+    margin-bottom: 0;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: none;
   }
 }
 
